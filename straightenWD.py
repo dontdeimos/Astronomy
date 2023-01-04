@@ -20,11 +20,11 @@ from matplotlib import pyplot
 
 
 
-name = np.loadtxt('/Users/sarahdeveny/Research/GraduateThesis/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[3], skiprows=4,dtype='str')
-F300X, F390W = np.loadtxt('/Users/sarahdeveny/Research/GraduateThesis/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[4,10], skiprows=4, unpack=True)
-q300, q390 = np.loadtxt('/Users/sarahdeveny/Research/GraduateThesis/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[6,12], skiprows=4, unpack=True)
-o300, o390 = np.loadtxt('/Users/sarahdeveny/Research/GraduateThesis/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[7,13], skiprows=4, unpack=True)
-g300, g390 = np.loadtxt('/Users/sarahdeveny/Research/GraduateThesis/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[9,15], skiprows=4, unpack=True)
+name = np.loadtxt('/Users/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[3], skiprows=4,dtype='str')
+F300X, F390W = np.loadtxt('/Users/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[4,10], skiprows=4, unpack=True)
+q300, q390 = np.loadtxt('/Users/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[6,12], skiprows=4, unpack=True)
+o300, o390 = np.loadtxt('/Users/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[7,13], skiprows=4, unpack=True)
+g300, g390 = np.loadtxt('/Users/47tuc/heinke_GO-12950/LOGR.XYVIQ3',usecols=[9,15], skiprows=4, unpack=True)
 
 #Cut the 2 duplicates
 u, indexdupremoval = np.unique(name, return_index=True)
